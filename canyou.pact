@@ -5,11 +5,11 @@
 (module pactPSA 'admin-keyset
  "PSA to the Pact community!"
  (defun welcome (pact)
-   "See Pact code with more colors!"
    (format "GitHub Now Supports Syntax Highlighting for {}!" [pact]))
 )
 
 ;; reveal the PSA
 (welcome "pact")
 
->> GitHub Now Supports Syntax Highlighting for Pact
+;; Result
+;; GitHub Now Supports Syntax Highlighting for Pact
