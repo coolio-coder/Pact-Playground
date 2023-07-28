@@ -11,5 +11,5 @@
 ;; reveal the PSA
 (welcome "pact")
 
-;; Result
+;; REPL Result
 ;; GitHub Now Supports Syntax Highlighting for Pact
