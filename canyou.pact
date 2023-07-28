@@ -1,15 +1,15 @@
 ;; PSA to the Kadena Bulider Community through Pact
 
-(define-keyset 'admin-keyset (read-keyset "admin-keyset"))
+(module pact-psa GOVERNANCE
+  @doc "PSA to the Pact community!"
 
-(module pactPSA 'admin-keyset
- "PSA to the Pact community!"
- (defun welcome (pact)
-   (format "GitHub Now Supports Syntax Highlighting for {}!" [pact]))
+  (defcap GOVERNANCE ()
+    true)
+
+  (defun welcome (pact)
+    (format "GitHub now supports syntax highlighting for {}!" [pact]))
 )
 
-;; reveal the PSA
-(welcome "pact")
+(welcome "Pact")
 
-;; REPL Result
-;; GitHub Now Supports Syntax Highlighting for Pact
+;; "GitHub Now Supports Syntax Highlighting for Pact!"
